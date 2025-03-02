@@ -316,7 +316,7 @@ export default {
     ,pro:'高表现'
     ,needImg:'请传参考图才生效！'
     ,seed:'种子数字 1~2147483647'
-    ,klingInfo:'说明： <li>1. 高表现是3.5倍的价格</li>  <li>2. 10s是2倍的价格</li> <li>3. 尾帧必须有参考图片才生效</li>'
+    ,klingInfo:'说明： <li>1. 高表现是3.5倍的价格</li>  <li>2. 10s是2倍的价格</li> <li>3. 尾帧必须有参考图片才生效</li> <li>4. v1.5 v1.6的价格都是v1.0的2倍</li>'
 
     ,camera_type:'镜头'
     ,cnull:'智能匹配'
@@ -364,6 +364,12 @@ export default {
     ,rml_info:'注意：<ul><li>1.必须带图</li><li>2.模型只有一个 gen3a_turbo </li><li>3.10s的价格是5s的双倍</li></ul>'
     ,rml_heng:'横屏'
     ,rml_shu:'竖屏'
+
+    ,pixabout:'Pixverse 相关'
+    ,pixkeyPlaceholder:'Pixverse 的API Key 可不填'
+    ,pixserver:'Pixverse 接口地址'
+    ,pixinfo:' 说明：<br>  <ul> <li>1.以v3.5 360p 时长5s 模式 Normal 为基数</li><li>2.v2.5 是 0.5倍</li>  <li>3.时长8s 是 2倍</li> <li>4.540P 1.5倍 720P 2倍 1080P 4倍</li> <li>5.模式 performance 2倍</li> <li>6.倍数是相乘的 比如 720P 时长8s 那就是 2*2是4倍，如果再加performance 就是8倍</li></ul>'
+  
   },
 
 	draw: {

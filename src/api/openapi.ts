@@ -45,6 +45,8 @@ export const KnowledgeCutOffDate: Record<string, string> = {
   "claude-3-5-sonnet-20241022": "2024-04",
   "gemini-pro": "2023-12",
   "gemini-pro-vision": "2023-12",
+  "deepseek-v3": "2023-12",
+  "deepseek-r1": "2023-12",
   "gemini-pro-1.5": "2024-04"
 };
 
@@ -313,6 +315,7 @@ export const getSystemMessage = (uuid?:number )=>{
     let producer= 'You are ChatGPT, a large language model trained by OpenAI.'
     if(model.includes('claude')) producer=  'You are Claude, a large language model trained by Anthropic.';
     if(model.includes('gemini')) producer=  'You are Gemini, a large language model trained by Google.';
+    if(model.includes('deepseek')) producer=  'You are DeepSeek, a large language model trained by DeepSeek.';
     //用户自定义系统
     if(homeStore.myData.session.systemMessage )  producer= homeStore.myData.session.systemMessage
     
@@ -534,6 +537,9 @@ export const openaiSetting= ( q:any,ms:MessageApiInjection )=>{
                 KLING_SERVER:url,
                 PIKA_SERVER:url,
                 UDIO_SERVER:url,
+                PIXVERSE_SERVER:url,
+                
+                
                 
                 OPENAI_API_KEY:key,
                 MJ_API_SECRET:key, 
@@ -545,6 +551,7 @@ export const openaiSetting= ( q:any,ms:MessageApiInjection )=>{
                 KLING_KEY:key,
                 PIKA_KEY:key,
                 UDIO_KEY:key,
+                PIXVERSE_KEY:key,
              } )
             blurClean();
             gptServerStore.setMyData( gptServerStore.myData );
@@ -608,7 +615,7 @@ const getModelMax=( model:string )=>{
         return 32;
     }else if( model.indexOf('gpt-4-turbo')>-1||  model.indexOf('gpt-4o')>-1 ||   model.indexOf('o1-')>-1){
         return 128; 
-    }else if( model.indexOf('64k')>-1  ){
+    }else if( model.indexOf('64k')>-1 || model.indexOf('deepseek')>-1 ){
         return 64;
     }else if( model.indexOf('128k')>-1 
     || model=='gpt-4-1106-preview' 

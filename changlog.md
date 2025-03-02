@@ -1,6 +1,31 @@
 # 功能升级日志
 
 #  计划 
+
+# 2.23.4
+- 🐞 修复：`deepseek-v3` `deepseek-r1` 识图处理，需要中转支持
+- 🐞 修复：`deepseek-r1` think 思考过程显示优化
+
+
+
+# 2.23.3
+- 😄 新增：`deepseek-v3` `deepseek-r1` 模型
+
+# 2.23.2
+- 😄 支持：Pixverse 模版特效
+- 😄 支持：kling 支持 model 选型 `v1` `v1.5` `v1.6`
+
+# 2.23.1
+- 🐞 修复：Pixverse 时长支持8s 而非10s
+- 😄 支持：Pixverse style风格
+- 🐞 修复：suno 后端转发目录使用 `/suno`
+
+# 2.22.10
+- 😄 支持：视频模型 Pixverse
+- 😄 支持：Pixverse 图片、前后帧、扩展
+
+# 2.22.9
+- 😄 新增：realtime 可设置模型 `gpt-4o-mini-realtime-preview-2024-12-17` `gpt-4o-realtime-preview-2024-12-17` `gpt-4o-realtime-preview-2024-10-01`
 # 2.22.8
 - 😄 新增：o1  o1-2024-12-17
 
