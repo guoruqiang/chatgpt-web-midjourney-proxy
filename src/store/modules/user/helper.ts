@@ -18,9 +18,9 @@ export interface UserState {
 export function defaultSetting(): UserState {
   return {
     userInfo: {
-      avatar: 'https://raw.githubusercontent.com/Dooy/chatgpt-web-midjourney-proxy/main/src/assets/avatar.jpg',
-      name:  t('mjset.sysname'),//'AI绘图',
-      description: 'Star on <a href="https://github.com/Dooy/chatgpt-web-midjourney-proxy" class="text-blue-500" target="_blank" >GitHub</a>',
+      avatar: 'https://main.nwafu-ai.cn/images/pngs/mjchat.png',
+      name:  t('mjset.sysname'),//'西农er’s GPT',
+      description: '专为<a href="https://gpt.nwafu-ai.me" class="text-blue-500" target="_blank" >西农er</a>服务',
     },
   }
 }
